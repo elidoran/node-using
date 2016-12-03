@@ -69,6 +69,7 @@ function plugin(options, thing) {
   //   1. `thing.use = using.withOptions(defaultOptions)`
   //   2. `thing.use(fn, pluginOptions)`
   // #2 overrides #1.
+  // options may be null
 }
 ```
 
@@ -149,10 +150,11 @@ thing.process('blarg')
 
 ```javascript
 // as above, let's use a behaviorless object
-var thing = {}
+var use = require('using')
+  , thing = {}
 
 // instead of adding the default `use()` function, let's supply options.
-thing.use = require('using').withOptions({
+thing.use = use.withOptions({
   // these will be overridden by plugin specific options
   prefix: '(',
   suffix: ')'
