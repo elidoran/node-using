@@ -3,6 +3,15 @@
 [![Dependency Status](https://gemnasium.com/elidoran/node-using.png)](https://gemnasium.com/elidoran/node-using)
 [![npm version](https://badge.fury.io/js/using.svg)](http://badge.fury.io/js/using)
 
+# Moved/Renamed/Enhanced
+
+Moved to [node-use](https://github.com/elidoran/node-use).
+
+Renamed to [@use/core](https://www.npmjs.com/package/@use/core).
+
+Enhanced with ability to enhance itself.
+
+
 Add use() function for easy plugin ability.
 
 Allows default options and plugin specific options.
